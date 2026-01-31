@@ -1,0 +1,282 @@
+ (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
+diff --git a/index.html b/index.html
+new file mode 100644
+index 0000000000000000000000000000000000000000..c1ee7478ee82d374b7ae4e6dc10aa04ac81f975f
+--- /dev/null
++++ b/index.html
+@@ -0,0 +1,272 @@
++<!DOCTYPE html>
++<html lang="id">
++  <head>
++    <meta charset="UTF-8" />
++    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
++    <title>Gionaru — Amora</title>
++    <link rel="stylesheet" href="styles.css" />
++    <link rel="preconnect" href="https://fonts.googleapis.com" />
++    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
++    <link
++      href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&family=Fredoka:wght@400;600&family=Nunito:wght@300;400;600&display=swap"
++      rel="stylesheet"
++    />
++  </head>
++  <body>
++    <div class="page">
++      <header class="hero">
++        <div class="hero__profile">
++          <div class="profile-ring">
++            <img src="pfp.jpeg" alt="Foto profil Amora" />
++          </div>
++          <div class="profile-meta">
++            <p class="profile-label">@louvreanz</p>
++            <h1>Amora</h1>
++            <p class="profile-tagline">
++              Visual romantis, vibes hangat, dan kisah yang hidup.
++            </p>
++            <div class="profile-actions">
++              <button class="sound-toggle" type="button" aria-pressed="false">
++                <span class="sound-icon">♪</span>
++                <span class="sound-label">Hidupkan Suara</span>
++              </button>
++              <span class="status-pill">status: soft crush era ✿</span>
++            </div>
++          </div>
++        </div>
++        <div class="hero__marquee" aria-hidden="true">
++          <div class="marquee-track">
++            <span>✧ welcome to gionaru ✧</span>
++            <span>✧ welcome to gionaru ✧</span>
++            <span>✧ welcome to gionaru ✧</span>
++          </div>
++        </div>
++      </header>
++
++      <nav class="tabs" aria-label="Navigasi">
++        <button class="tab is-active" type="button">home</button>
++        <button class="tab" type="button">about</button>
++        <button class="tab" type="button">comms</button>
++        <button class="tab" type="button">gallery</button>
++      </nav>
++
++      <main class="content">
++        <section class="card summary" id="summary">
++          <h2>GIONARU</h2>
++          <p class="summary__subtitle">a geonxin long au</p>
++          <div class="summary__body">
++            <p>
++              anak DKV si content creator tiktod ganteng dan anak arsitek pendiem
++              gak pernah nyangka hidup mereka bakalan numpuk satu file di folder
++              yang sama.
++            </p>
++          </div>
++          <div class="summary__badges">
++            <span>✿ slow burn</span>
++            <span>✿ daily slice</span>
++            <span>✿ campus vibe</span>
++          </div>
++        </section>
++
++        <section class="card narrative" id="narrative">
++          <div class="card__header">
++            <h2>Narasi — hidup & hangat</h2>
++            <p>
++              Format khusus: bukan gaya medium/wattpad. Ini kisah yang
++              “bernapas”, dengan jeda, ritme, dan suara kecil di antaranya.
++            </p>
++          </div>
++          <div class="narrative__flow">
++            <article class="line">
++              <span class="beat">✶</span>
++              <p>
++                Angin siang nyelip lewat jaket, dan motor Gio melaju dengan
++                kecepatan yang—ajaibnya—masih normal. Naru duduk di belakang, satu
++                tangan nyangkut di hoodie Gio. Awalnya cuma nyentuh. Lama-lama
++                ketarik dikit.
++              </p>
++            </article>
++            <article class="line">
++              <span class="beat">✶</span>
++              <p>
++                “Lu ngapain sih,” kata Gio sambil ketawa kecil. “Hoodie gue
++                ketarik.”
++              </p>
++            </article>
++            <article class="line">
++              <span class="beat">✶</span>
++              <p>“Biar kamu ga ngebut,” jawab Naru cepat.</p>
++            </article>
++            <article class="line">
++              <span class="beat">✶</span>
++              <p>
++                “Lu tau ga,” Gio nyeletuk, “kalo orang pegangan gitu biasanya
++                karena nyaman.”
++              </p>
++            </article>
++            <article class="line">
++              <span class="beat">✶</span>
++              <p>
++                Naru langsung reflek nyubit punggungnya. “Fokus nyetir.”
++              </p>
++            </article>
++            <article class="line">
++              <span class="beat">✶</span>
++              <p>
++                “Gue fokus,” Gio santai. “Fokus ke depan. Sama ke lu dikit.”
++              </p>
++            </article>
++            <article class="line">
++              <span class="beat">✶</span>
++              <p>
++                Naru mendesah. Setiap kali Gio ngomong gitu, emosinya naik
++                sendiri. Padahal dia tau—Gio emang suka ngisengin. Dan parahnya,
++                dia selalu berhasil.
++              </p>
++            </article>
++            <article class="line">
++              <span class="beat">✶</span>
++              <p>Lampu merah. Motor berhenti. Gio nengok dikit, sekilas aja.</p>
++            </article>
++            <article class="line">
++              <span class="beat">✶</span>
++              <p>“Lu dingin ya?”</p>
++            </article>
++            <article class="line">
++              <span class="beat">✶</span>
++              <p>“Angin,” jawab Naru.</p>
++            </article>
++            <article class="line">
++              <span class="beat">✶</span>
++              <p>
++                “Ah,” Gio senyum tipis. “Biasanya kalo dingin tuh disuruh peluk.”
++              </p>
++            </article>
++            <article class="line">
++              <span class="beat">✶</span>
++              <p>
++                “Jangan aneh-aneh,” Naru langsung narik hoodienya lebih kenceng.
++                “Aku cuma pegangan.”
++              </p>
++            </article>
++            <article class="line">
++              <span class="beat">✶</span>
++              <p>“Pegangan yang niat banget,” Gio ketawa.</p>
++            </article>
++            <article class="line">
++              <span class="beat">✶</span>
++              <p>Lampu hijau. Motor jalan lagi.</p>
++            </article>
++            <article class="line">
++              <span class="beat">✶</span>
++              <p>
++                Naru sadar satu hal: setiap kali Gio ketawa, bahunya ikut naik
++                turun dikit. Dan entah kenapa, itu bikin pegangan Naru makin
++                susah dilepas.
++              </p>
++            </article>
++            <article class="line">
++              <span class="beat">✶</span>
++              <p>“Gio,” panggil Naru akhirnya.</p>
++            </article>
++            <article class="line">
++              <span class="beat">✶</span>
++              <p>“Hm?”</p>
++            </article>
++            <article class="line">
++              <span class="beat">✶</span>
++              <p>“Kita ke stationery aja, jangan muter-muter.”</p>
++            </article>
++            <article class="line">
++              <span class="beat">✶</span>
++              <p>“Takut lama sama gue?”</p>
++            </article>
++            <article class="line">
++              <span class="beat">✶</span>
++              <p>“Takut kamu ngomel.”</p>
++            </article>
++            <article class="line">
++              <span class="beat">✶</span>
++              <p>“Lu kan suka,” Gio jawab ringan.</p>
++            </article>
++            <article class="line">
++              <span class="beat">✶</span>
++              <p>“Engga.”</p>
++            </article>
++            <article class="line">
++              <span class="beat">✶</span>
++              <p>“Lu naik motor gue.”</p>
++            </article>
++            <article class="line">
++              <span class="beat">✶</span>
++              <p>“Itu beda.”</p>
++            </article>
++            <article class="line">
++              <span class="beat">✶</span>
++              <p>
++                “Bedanya lu milih,” Gio senyum lagi. “Dan lu masih di sini.”
++              </p>
++            </article>
++            <article class="line">
++              <span class="beat">✶</span>
++              <p>
++                Naru pengen bantah. Tapi ga nemu kata yang pas. Motor terus
++                melaju. Jalanan rame, tapi rasanya sempit. Terlalu banyak suara,
++                terlalu dekat jaraknya, terlalu… terasa.
++              </p>
++            </article>
++            <article class="line">
++              <span class="beat">✶</span>
++              <p>
++                Dan meskipun Naru masih kesel—jemarinya tetap di hoodie Gio. Ga
++                lepas. Ga ada niat buat lepas.
++              </p>
++            </article>
++          </div>
++        </section>
++
++        <section class="card links" id="links">
++          <h2>Link Kecil ✿</h2>
++          <div class="links__grid">
++            <a href="#summary" class="link-card">
++              <span class="icon">⌂</span>
++              <div>
++                <h3>Summary</h3>
++                <p>ringkas & manis</p>
++              </div>
++            </a>
++            <a href="#narrative" class="link-card">
++              <span class="icon">✎</span>
++              <div>
++                <h3>Narasi</h3>
++                <p>hidup & bernapas</p>
++              </div>
++            </a>
++            <a href="#" class="link-card">
++              <span class="icon">✷</span>
++              <div>
++                <h3>Playlist</h3>
++                <p>lo-fi sore</p>
++              </div>
++            </a>
++            <a href="#" class="link-card">
++              <span class="icon">✉</span>
++              <div>
++                <h3>Comms</h3>
++                <p>open for chat</p>
++              </div>
++            </a>
++          </div>
++        </section>
++      </main>
++
++      <footer class="footer">
++        <p>Made with soft colors, sparkle, dan sedikit degup ✧</p>
++      </footer>
++    </div>
++
++    <div class="floating-sparkles" aria-hidden="true"></div>
++
++    <script src="script.js"></script>
++  </body>
++</html>
+ 
+EOF
+)
